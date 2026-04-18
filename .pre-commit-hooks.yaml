@@ -1,0 +1,26 @@
+- id: format
+  name: gleam format
+  description: Format files with gleam format.
+  entry: gleam format
+  language: system
+  files: \.gleam$
+- id: format-check
+  name: gleam format --check
+  description: Check that files are formatted with gleam format.
+  entry: gleam format --check
+  language: system
+  files: \.gleam$
+- id: check
+  name: gleam check
+  description: Type check the project.
+  entry: gleam check
+  language: system
+  files: \.gleam$
+  pass_filenames: false
+- id: test
+  name: gleam test
+  description: Run the project tests.
+  entry: gleam test
+  language: system
+  files: \.gleam$
+  pass_filenames: false
